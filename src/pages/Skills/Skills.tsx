@@ -2,27 +2,31 @@ import { Grid } from "@mui/material";
 import ProgressBar from "../../components/ProgressBar/ProgressBar";
 import useSkillsStyle from "./Skills.style";
 
-const currentSkills = [
+const skillSetOne = [
   {
     id: 1,
     name: "React",
-    complete: "70",
+    complete: "50",
   },
   {
-    id: 1,
+    id: 2,
     name: "JavaScript",
     complete: "40",
   },
   {
-    id: 1,
-    name: "Adobe",
-    complete: "30",
+    id: 3,
+    name: "Adobe XD",
+    complete: "10",
   },
+];
+
+const skillSetTwo = [
   {
     id: 1,
-    name: "HTML",
-    complete: "90",
+    name: "CSS",
+    complete: "50",
   },
+
 ];
 
 const Skills = (): JSX.Element => {
@@ -42,14 +46,10 @@ const Skills = (): JSX.Element => {
         </Grid>
         <Grid container className={classes.skillContainer}>
           <Grid item container xs={6} direction='column'>
-            <ProgressBar title='react' complete='50'/>
-            <ProgressBar title='react' complete='50'/>
-            <ProgressBar title='react' complete='50'/>
+            {skillSetOne.map((skill) => {return (<ProgressBar title={skill.name} complete={skill.complete}/>)})}
           </Grid>
           <Grid item container xs={6} direction='column' >
-            <ProgressBar title='react' complete='50'/>
-            <ProgressBar title='react' complete='50'/>
-            <ProgressBar title='react' complete='50'/>
+          {skillSetTwo.map((skill) => {return (<ProgressBar title={skill.name} complete={skill.complete}/>)})}
           </Grid>
         </Grid>
       </Grid>
