@@ -24,5 +24,9 @@ const useSkillsStyle = makeStyles({
         width: "20%",
         alignSelf: 'center'
       },
+      skillContainer: {
+      marginLeft: 140,
+      marginTop: 50
+      }
 });
 export default useSkillsStyle;
