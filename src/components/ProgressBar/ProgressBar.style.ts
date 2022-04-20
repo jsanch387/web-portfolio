@@ -15,10 +15,11 @@ filler: {
     textAlign: 'right'
 },
 label: {
-    padding: 5,
+    padding: 10,
     marginTop: 5,
     color: 'black',
     fontWeight: 'bold',
+    
 },
 container: {
     width: '80%',
@@ -27,6 +28,8 @@ container: {
 title: {
     textAlign: 'center',
     margin: 0,
+    fontFamily: "Century Gothic",
+    fontSize: 20
 },
 divider: {
     border: ".5px solid #128FFF",
