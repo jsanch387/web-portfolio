@@ -3,18 +3,18 @@ import { makeStyles } from "@mui/styles";
 const useContactStyles = makeStyles({
   contactSection: {
     height: "110vh",
-    fontFamily: "Hubballi, cursive",
+    fontFamily: "Century Gothic",
   },
   container: {
     padding: "10rem 11rem",
     textAlign: "center",
   },
   title: {
-    fontSize: 45,
+    fontSize: 40,
     marginBottom: 0,
   },
   paragraph: {
-    fontSize: 25,
+    fontSize: 23,
     color: "#B3B3B3",
   },
   divider: {
@@ -37,7 +37,7 @@ const useContactStyles = makeStyles({
       width: 150,
       height: 45,
       borderRadius: 15,
-      fontFamily: "Hubballi, cursive",
+      fontFamily: "Century Gothic",
       fontSize: 20,
       textTransform: "none",
     },

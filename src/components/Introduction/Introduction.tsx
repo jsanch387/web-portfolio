@@ -1,8 +1,10 @@
-import { Avatar, Grid } from "@mui/material";
+import { Avatar, Grid, } from "@mui/material";
 import { Button } from "@mui/material";
+import { Link } from 'react-scroll';
 import useIntroductionStyles from "./Introduction.style";
 
 const Introduction = (): JSX.Element => {
+
   const classes = useIntroductionStyles();
   return (
       <Grid container className={classes.container}>
@@ -16,9 +18,7 @@ const Introduction = (): JSX.Element => {
             enjoy designing and developing web applications. I hope to create
             various full stack apps in the future.
           </p>
-          <Button variant="contained" className={classes.button}>
-            Contact
-          </Button>
+          <Link to="contact" spy={true} smooth={true} offset={50} duration={500} className={classes.button}>Contact</Link>
         </Grid>
         <Grid item container xs={6} justifyContent="right">
           <Avatar className={classes.image} />
