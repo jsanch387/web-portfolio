@@ -1,5 +1,4 @@
 import { Avatar, Grid, } from "@mui/material";
-import { Button } from "@mui/material";
 import { Link } from 'react-scroll';
 import useIntroductionStyles from "./Introduction.style";
 
