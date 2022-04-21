@@ -25,11 +25,11 @@ const useContactStyles = makeStyles({
   input: {
     "&.MuiFormControl-root": {
       marginBottom: 20,
-      width: "70%",
+      width: "90%",
     },
   },
   messageContainer: {
-    paddingTop: 100,
+    paddingTop: 60,
   },
   button: {
     "&.MuiButton-root": {
