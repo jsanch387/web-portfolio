@@ -18,12 +18,12 @@ const AboutMe = (): JSX.Element => {
   return (
     <section id="about" className={classes.section}>
       <Grid container className={classes.container}>
-        <Grid item container>
-          <Grid item xs={6}>
+        <Grid item container >
+          <Grid item xs={12} md={6}>
             <h1 className={classes.title}>About Me</h1>
             <hr className={classes.divider} />
           </Grid>
-          <Grid item container xs={6} justifyContent="right">
+          <Grid item container xs={12} md={6} justifyContent='center'>
             <h1 className={classes.svg}>picture</h1>
           </Grid>
         </Grid>

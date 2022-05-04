@@ -11,7 +11,12 @@ const Contact = (): JSX.Element => {
     e.preventDefault();
 
     emailjs
-      .sendForm("service_csm5kb8", "portfolio-template", e.target, "2t6HvU1nv0tzx_zlL")
+      .sendForm(
+        "service_csm5kb8",
+        "portfolio-template",
+        e.target,
+        "2t6HvU1nv0tzx_zlL"
+      )
       .then(
         (result) => {
           console.log(result.text);
@@ -33,11 +38,11 @@ const Contact = (): JSX.Element => {
           <hr className={classes.divider} />
         </Grid>
         <Grid item container className={classes.messageContainer}>
-          <Grid item xs={4}>
+          <Grid item xs={12} md={4}>
             Image
           </Grid>
 
-          <Grid item container xs={5} direction="column">
+          <Grid item container xs={12} md={5} direction="column">
             <form onSubmit={sendEmail}>
               <TextField
                 name="subject"
