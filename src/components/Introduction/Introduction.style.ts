@@ -1,5 +1,4 @@
 import { makeStyles } from "@mui/styles";
-import { padding, textAlign } from "@mui/system";
 
 const useIntroductionStyles = makeStyles({
   container: {
@@ -7,32 +6,57 @@ const useIntroductionStyles = makeStyles({
       marginTop: 200,
       padding: "0 180px",
       fontFamily: "Century Gothic",
+      "@media(max-width: 900px)": {
+        marginTop: '40%',
+        padding: 5,
+       
+      },
     },
+    
   },
   hello: {
     fontSize: 70,
     letterSpacing: 3,
+    "@media(max-width: 900px)": {
+      fontSize: 30,
+    },
   },
   name: {
     fontSize: 70,
     fontWeight: "bold",
     color: "#128FFF",
     letterSpacing: 3,
+    "@media(max-width: 900px)": {
+      fontSize: 35,
+    },
   },
   title: {
     fontSize: 40,
     color: "#B3B3B3",
     letterSpacing: 2,
+    "@media(max-width: 900px)": {
+      fontSize: 18,
+      marginTop: 5
+    },
   },
   divider: {
     border: "2px solid #128FFF",
     width: "80%",
     marginLeft: 0,
     marginTop: 20,
+    "@media(max-width: 900px)": {
+      marginLeft: 'auto',
+      marginRight: 'auto',
+      textAlign: "center",
+    },
   },
   paragraph: {
     fontSize: 25,
     color: "#B3B3B3",
+    '@media(max-width: 900px)': {
+      fontSize: 18,
+      padding: 5
+    },
   },
   button: {
     backgroundColor: "#128FFF",
@@ -46,18 +70,33 @@ const useIntroductionStyles = makeStyles({
     paddingTop: 12,
     "&:hover": {
       cursor: "pointer",
-      backgroundColor: '#1976d2'
+      backgroundColor: "#1976d2",
+    },
+    "@media(max-width: 900px)": {
+      marginLeft: 'auto',
+      marginRight: 'auto',
+    
+    },
+  },
+  introContainer: {
+    "@media(max-width: 900px)": {
+      paddingTop: 0,
+      textAlign: "center",
     },
   },
   image: {
-    height: 100,
-    width: 100,
     "&.MuiAvatar-root": {
       height: 350,
       width: 350,
-      marginRight: 100,
-      bottom: 40,
       border: "10px solid #128FFF",
+      "@media(max-width: 900px)": {
+        height: 200,
+        width: 200,
+        marginRight: 'auto',
+        marginLeft: 'auto',
+        top: -100,
+        border: "5px solid #128FFF",
+      },
     },
   },
 });

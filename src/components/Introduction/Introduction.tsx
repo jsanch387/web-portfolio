@@ -6,8 +6,11 @@ const Introduction = (): JSX.Element => {
 
   const classes = useIntroductionStyles();
   return (
-      <Grid container className={classes.container}>
-        <Grid item xs={6} container direction="column">
+      <Grid container className={classes.container} columnSpacing={6}>
+        <Grid item container xs={12} md={6} >
+          <Avatar className={classes.image} />
+        </Grid>
+        <Grid item xs={12} md={6} container direction="column" className={classes.introContainer}>
           <span className={classes.hello}>Hello, I'm</span>
           <span className={classes.name}>Jesus Sanchez</span>
           <span className={classes.title}>Frontend Developer</span>
@@ -18,9 +21,6 @@ const Introduction = (): JSX.Element => {
             various full stack apps in the future.
           </p>
           <Link to="contact" spy={true} smooth={true} offset={50} duration={500} className={classes.button}>Contact</Link>
-        </Grid>
-        <Grid item container xs={6} justifyContent="right">
-          <Avatar className={classes.image} />
         </Grid>
       </Grid>
   );

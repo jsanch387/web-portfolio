@@ -5,9 +5,12 @@ const useHomeStyles = makeStyles({
     height: "100vh",
     backgroundColor: "black",
     paddingTop: 130,
-    color: 'white'
+    color: "white",
+    "@media(max-width: 900px)": {
+      width: "auto",
+      height: "100vh",
+    },
   },
-
 });
 
 export default useHomeStyles;

@@ -34,21 +34,21 @@ const Skills = (): JSX.Element => {
   return (
     <section id="skills" className={classes.skillSection}>
       <Grid container className={classes.container}>
-        <Grid item container justifyContent="center" direction="column">
+        <Grid item container xs={12} justifyContent="center" >
           <h1 className={classes.title}>Skills </h1>
           <p className={classes.paragraph}>
             These are some of the tools and technologies that I use to develop
-            web applications. I plan to master each skill <br /> and continue
+            web applications. I plan to master each skill and continue
             developing creative new applications along with learning more
             skills.
           </p>
           <hr className={classes.divider} />
         </Grid>
         <Grid container className={classes.skillContainer}>
-          <Grid item container xs={6} direction='column'>
+          <Grid item container xs={12} md={6} direction='column'>
             {skillSetOne.map((skill) => {return (<ProgressBar title={skill.name} complete={skill.complete}/>)})}
           </Grid>
-          <Grid item container xs={6} direction='column' >
+          <Grid item container xs={12} md={6} direction='column' >
           {skillSetTwo.map((skill) => {return (<ProgressBar title={skill.name} complete={skill.complete}/>)})}
           </Grid>
         </Grid>

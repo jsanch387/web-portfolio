@@ -8,19 +8,30 @@ const useContactStyles = makeStyles({
   container: {
     padding: "10rem 11rem",
     textAlign: "center",
+    "@media(max-width: 900px)": {
+      padding: 0,
+      paddingTop: 150
+    },
   },
   title: {
     fontSize: 40,
     marginBottom: 0,
+    "@media(max-width: 900px)": {
+      fontSize: 30,
+    },
   },
   paragraph: {
     fontSize: 23,
     color: "#B3B3B3",
+    "@media(max-width: 900px)": {
+      fontSize: 15,
+    },
   },
   divider: {
-    border: " solid #128FFF",
+    border: "2px solid #128FFF",
     width: "20%",
     alignSelf: "center",
+
   },
   input: {
     "&.MuiFormControl-root": {
@@ -30,6 +41,9 @@ const useContactStyles = makeStyles({
   },
   messageContainer: {
     paddingTop: 60,
+    "@media(max-width: 900px)": {
+      paddingTop: 20,
+    },
   },
   button: {
     "&.MuiButton-root": {
